@@ -6,49 +6,53 @@
       <img src="/images/elements/ti.png" class="element-card" alt="">
       <img src="/images/elements/be.png" class="element-card" alt="">
     </nav>
-    <div class="hr"></div>
-      <b-navbar toggleable>
-        <div class="container">
-          <b-nav-toggle target="nav_collapse_1"></b-nav-toggle>
-<!--           <a class="navbar-brand" href="/">
-              <span>Periodic Audio</span>
-          </a> -->
 
-          <b-collapse is-nav id="nav_collapse_1">
-              <b-nav is-nav-bar>
-                  <b-nav-item>Shop</b-nav-item>
-              </b-nav>
-              <b-nav is-nav-bar class="ml-auto">
-                  <b-nav-item-dropdown text="Technology" right-alignment>
-                      <a href class="dropdown-item active">
-                          FAQ
-                      </a>
-                      <a href class="dropdown-item">
-                          Glossary
-                      </a>
-                      <a href class="dropdown-item">
-                          Tech Journal
-                      </a>
-                  </b-nav-item-dropdown>
-                  <b-nav-item-dropdown right-alignment>
-                      <template slot="text">
-                          <span>Company</span>
-                      </template>
-                      <a href class="dropdown-item">
-                          Contact
-                      </a>
-                      <a href class="dropdown-item">
-                          Press
-                      </a>
-                      <a href class="dropdown-item">
-                          About
-                      </a>
-                  </b-nav-item-dropdown>
-              </b-nav>
-          </b-collapse>
-        </div>
+    <!-- <div class="hr"></div> -->
+
+    <b-navbar toggleable>
+      <div class="container">
+        <b-nav-toggle target="nav_collapse_1"></b-nav-toggle>
+<!--           <a class="navbar-brand" href="/">
+            <span>Periodic Audio</span>
+        </a> -->
+
+        <b-collapse is-nav id="nav_collapse_1">
+            <b-nav is-nav-bar>
+                <b-nav-item :to="{ name: 'static', params: { slug: 'shop' }}">Shop</b-nav-item>
+            </b-nav>
+            <b-nav is-nav-bar class="ml-auto">
+                <b-nav-item-dropdown text="Technology" right-alignment>
+                    <router-link :to="{ name: 'faq' }" class="dropdown-item">
+                        FAQ
+                    </router-link>
+                    <router-link :to="{ name: 'static', params: { slug: 'glossary' }}" class="dropdown-item">
+                        Glossary
+                    </router-link>
+                    <a href="http://www.periodicaudio.com/PAIJournal/category/iems/" target="_blank" rel="noopener" class="dropdown-item">
+                        Tech Journal
+                    </a>
+                </b-nav-item-dropdown>
+                <b-nav-item-dropdown right-alignment>
+                    <template slot="text">
+                        <span>Company</span>
+                    </template>
+                    <router-link :to="{ name: 'static', params: { slug: 'contact' }}" class="dropdown-item">
+                        Contact
+                    </router-link>
+                    <router-link :to="{ name: 'static', params: { slug: 'press' }}" class="dropdown-item">
+                        Press
+                    </router-link>
+                    <router-link :to="{ name: 'static', params: { slug: 'about' }}" class="dropdown-item">
+                        About
+                    </router-link>
+                </b-nav-item-dropdown>
+            </b-nav>
+        </b-collapse>
+      </div>
     </b-navbar>
+
     <div class="hr"></div>
+
     <section class="content">
       <router-view></router-view>
     </section>
@@ -79,6 +83,9 @@
     margin-left: auto
     margin-right: auto
 
+  a
+    color: $charcoal
+
 
 .logo-rect
   flex-grow: 1
@@ -107,6 +114,9 @@ section.content
   margin-right: auto
 
 
+.dropdown-menu
+  border-radius: 0 !important
+  padding: 0 !important
 
 
 </style>

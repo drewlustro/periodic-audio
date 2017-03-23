@@ -7,9 +7,6 @@ import store from './store'
 
 sync(store, router)
 
-import 'normalize.css/normalize.css'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(BootstrapVue)
 
