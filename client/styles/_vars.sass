@@ -1,0 +1,61 @@
+/**
+ *  _vars.sass
+ */
+
+@import _colors
+
+// -------------------------------------------------------------------
+// TYPE
+
+// Noto
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700')
+$noto: 'Noto Sans', sans-serif
+// Open Sans
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600')
+// $opensans: 'Open Sans', sans-serif
+
+$system-font: -apple-system, BlinkMacSystemFont
+$helvetica: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+$open-sans: 'Open Sans', $helvetica
+$droid-serif: 'Droid Serif', 'Times New Roman', serif
+
+$primary-font: $system-font, $noto
+
+// COLORS
+$normal-color: $charcoal
+$link-color: darken($belize-hole, 4%)
+$link-color-muted: #505457 // deep charcoal
+
+// GENERAL METRICS
+$global-border-radius: 0
+
+// FLEX CONTAINERS
+$format-width-fluid: 100%
+$format-width-max: 1000px
+$format-width-body-max--absolute: 1000px
+$format-width-img-max: 80vw
+$format-width-img-max--absolute: 1280px
+$flex-container-padding: 5rem
+
+// HEADER
+$header-height-min: 130px
+$header-height: 14vh
+$header-height-max: 140px
+
+// CONSISTENT PADDING
+$viewport-padding: 4rem !default
+$content-padding-left--constrained: 4rem !default
+$content-padding-right--constrained: 4rem !default
+$content-padding-top--constrained: 0 !default
+$content-padding-bottom--constrained: 10vh !default
+
+$button-padding: 1rem 2rem
+
+$pad-emboss--minor: 0.75rem
+
+
+// TODO: organize
+// PostPage + StaticPage
+$content-left-compensation: calc((#{$format-width-img-max--absolute} - #{$format-width-body-max--absolute}))
+$content-left-compensation--negative: calc((#{$format-width-img-max--absolute} - #{$format-width-body-max--absolute}) / -2)
+

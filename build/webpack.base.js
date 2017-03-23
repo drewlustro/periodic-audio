@@ -23,9 +23,11 @@ module.exports = {
     alias: {
       root: path.join(__dirname, '../client'),
       components: path.join(__dirname, '../client/components')
+
     },
     modules: [
       _.cwd('node_modules'),
+      _.cwd('bower_components'),
       // this meanse you can get rid of dot hell
       // for example import 'components/Foo' instead of import '../../components/Foo'
       _.cwd('client')
@@ -59,6 +61,9 @@ module.exports = {
       }
     ]
   },
+  // sassLoader: {
+  //   includePaths: [path.resolve(config.paths.src, 'styles'), config.paths.root]
+  // },
   plugins: [
     new HtmlWebpackPlugin({
       title: config.title,
