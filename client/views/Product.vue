@@ -130,6 +130,7 @@ export default {
     width: 100%
     text-align: right
     font-size: 2rem
+    margin-bottom: 5em
 
     a
       color: $charcoal
@@ -143,7 +144,10 @@ export default {
   .spec-cell
     align-self: flex-end
     width: auto
-    max-width: 28vw
+    max-width: 26vw
+
+    &.left
+      max-width: 24vw
 
     &.right
       text-align: right
