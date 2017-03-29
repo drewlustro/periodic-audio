@@ -117,6 +117,7 @@ export default {
   background-size: contain
   background-repeat: no-repeat
   background-position: bottom center
+  padding: 4rem
 
   &.be
     background-image: url(/images/products/beryllium.jpg)
@@ -129,7 +130,6 @@ export default {
     width: 100%
     text-align: right
     font-size: 2rem
-    padding: 2em
 
     a
       color: $charcoal
