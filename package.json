@@ -1,6 +1,6 @@
 {
   "name": "periodic-audio",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Next generation periodic audio web.",
   "main": "client/index.js",
   "scripts": {
@@ -25,10 +25,13 @@
   "dependencies": {
     "babel-runtime": "^6.18.0",
     "bootstrap-vue": "^0.10.1",
+    "lodash": "^4.17.4",
+    "markdown-loader": "^2.0.0",
     "normalize.css": "^5.0.0",
     "promise-polyfill": "^6.0.2",
     "sass-loader": "^6.0.3",
     "vue": "^2.2.0",
+    "vue-html-loader": "^1.2.4",
     "vue-router": "^2.0.0",
     "vuex": "^2.0.0",
     "vuex-router-sync": "^4.0.0"

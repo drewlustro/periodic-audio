@@ -38,8 +38,16 @@ $ npm run lint
 
 Version | Time | Note
 ---- | ------- | ----
+0.3.0 | March 29, 4:00pm | Product view to mockup; migrated all image data; create endpoints for each model IEM's
 0.2.0 | March 22, 11:00pm | Views: Faq, Product, Static; accompanying routes; Copyright component. Wire up primary navigation.
 0.1.0 | March 22, 6:00pm | Scaffold `vuejs` and `webpack` boilerplate; subdomain ops and push scripts.
+
+
+## Tasks
+
+- Product page flex
+- Product data in-memory hash
+- Landing splash
 
 
 

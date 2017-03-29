@@ -23,7 +23,6 @@ module.exports = {
     alias: {
       root: path.join(__dirname, '../client'),
       components: path.join(__dirname, '../client/components')
-
     },
     modules: [
       _.cwd('node_modules'),
@@ -42,6 +41,11 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: ['babel-loader'],
+        exclude: [/node_modules/]
+      },
+      {
+        test: /\.md$/,
+        loaders: ['vue-html-loader', 'markdown-loader'],
         exclude: [/node_modules/]
       },
       {
